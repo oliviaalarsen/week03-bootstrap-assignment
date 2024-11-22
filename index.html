@@ -1,0 +1,344 @@
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Olivia Larsen">
+    <title>Week 3 Project</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+<!-- here is my bootstrap navbar with links to the homepage and my form/table page -->
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+
+        Align & Thrive: Living in Balance
+    
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+<!-- here is my "hamburger" button which shows the menu options,
+    my home page and the form/table I created  -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="balance.html">Body & Mind</a>
+            </li>
+          </ul>
+
+<!-- these links will redirect you from either page on the webpage -->
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO IMG -->
+
+    <div class="text-center mt-5">
+        <h1>Align & Thrive: Living in Balance</h1>
+      <img
+        class="img-fluid rounded m-3 w-50"
+        src="https://th.bing.com/th/id/R.5e931b90ca6b7fc7d8d15af589611c8b?rik=3UpYizvBmdrI9Q&riu=http%3a%2f%2fsfwallpaper.com%2fimages%2ffree-yoga-wallpaper-24.jpg&ehk=0JjYAE9BBm%2fDRDmC57y0XiSovuQCeQzowKRmmTfvg8Q%3d&risl=&pid=ImgRaw&r=0"
+        alt="Yoga by the sea"
+      />
+    </div>
+
+    <!-- here is the header to my website, all about health and wellness -->
+
+    <!-- WELCOME -->
+
+    <h1 class="text-center fs-2 mt-4 mb-3 p-1">Your guide to healthy living</h1>
+    <p class="text-center fs-4 p-2">Create the best version of you</p>
+    <p class="text-center fs-4">Nourish your body, elevate your life</p>
+
+    <!-- I added different font sizes for aesthetic appeal and continuity/overall flow -->
+
+      <div class="m-3 p-3">
+        <p  class="text-center fs-6">A healthy body begins with a healthy mind. It is vital to put yourself and your
+            own needs first. The easiest way to do this is by getting enough sleep every night, drinking
+        more water, and eating more veggies. With any fitness journey, it is important to remember that
+        it is all about 80% nutrition and 20% how you move your body. While it may seem overwhelming
+    at first, it is important to remember there is a community of people out there just like you, who are 
+    trying to improve themselves everyday. </p>
+      </div>
+
+    <!-- CARDS -->
+
+    <!-- here I have my cards, which properly stack when minimized -->
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 g-5 m-3 pt-5">
+        <div class="col-sm">
+          <div class="card h-100 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+              class="card-img-top"
+              alt="A colorful salad"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nutrition</h5>
+              <p class="card-text">
+                A good diet is the hallmark of good health.
+                Fuel your body with a balanced diet filled with whole foods to boost energy.
+                It also helps to supplement with a daily greens powder.
+              </p>
+            </div>
+          </div>
+        </div>
+
+    <!-- my cards are all formatted to the same size rows/columns with responsive images/text -->
+
+        <div class="col-sm">
+          <div class="card h-100 shadow-lg">
+            <img
+              src="https://img.freepik.com/premium-photo/fitness-stretching-woman-studio-health-wellness-training-motivation-soft-aesthetic-background-mockup-exercise-indian-girl-model-prepare-body-workout-with-mock-up_590464-110469.jpg"
+              class="card-img-top"
+              alt="A healthy woman stretching"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-4">Fitness</h5>
+              <p class="card-text">
+                Your body is the only home you will always have, so be sure you treat it
+                with love and kindness. Stay active with exercises that you enjoy, but 
+                don't be afraid to try new things - and don't forget to have fun!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card h-100 shadow-lg">
+            <img
+              src="https://th.bing.com/th/id/OIP.Np6GO_TVxoitFpacgLf36QAAAA?rs=1&pid=ImgDetMain"
+              class="card-img-top"
+              alt="A relaxing bubble bath"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-4">Wellness</h5>
+              <p class="card-text">
+                A healthy body is nothing without a healthy mind. Prioritize self-care, 
+                mindfulness, and healthy habits to feel good from the inside and out.
+                When you feel better, you do better.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PICTURE DIV -->
+
+    <!-- next I have my grid layout with respective images that stack when webpage is small or on mobile device -->
+
+    <div class="container mt-5 mb-5 pt-5 text-center">
+        <div class="m-3 p-5 photo-grid">
+      <div class="row gx-0 g-0">
+        <div class="col-sm-12 pb-3"><h2>Ready to start your journey?</h2></div>
+      </div>
+
+<!-- I added a container so it remains centered in the page, with various grid sizes 
+ so the images will stack -->
+
+      <div class="row gx-0 g-0">
+        <div class="col-sm-8">
+          <img
+            class="img-fluid"
+            src="https://th.bing.com/th/id/OIP.X8eihWvmWAHfeuJ8gRFIDgHaE8?rs=1&pid=ImgDetMain"
+            alt="Two people workout together"
+          />
+        </div>
+
+        <div class="col-sm-4">
+          <img
+            class="img-fluid"
+            src="https://th.bing.com/th/id/R.a9dfa1dc32ff747c7dd339994d50d84a?rik=K6TD%2fdBN%2f%2bL4xw&riu=http%3a%2f%2fthepurelife.ca%2fwp-content%2fuploads%2f2020%2f05%2fAcaiBowl.jpg&ehk=UBAGlDlMI8yjr9iQ%2fz6NHfQ965uoNr9zuQjHtbib9%2bI%3d&risl=&pid=ImgRaw&r=0"
+            alt="Acai bowl"
+          />
+        </div>
+      </div>
+
+      <div class="row gx-0 g-0">
+        <div class="col-sm-4">
+          <img
+            class="img-fluid"
+            src="https://th.bing.com/th/id/R.cfa19d836dbb3576acb903a542b64c8c?rik=1SzogscJsabfRA&riu=http%3a%2f%2fwww.praniglowdayspa.com.au%2fwp-content%2fuploads%2f2018%2f07%2fherbal-bath.jpg&ehk=m7V2lPCiiNuSl%2fp8%2buG3XhzK2c8GTwJWrVZAkVVpXOM%3d&risl=&pid=ImgRaw&r=0"
+            alt="Relaxing herbal bath"
+          />
+        </div>
+
+        <div class="col-sm-8">
+          <img
+            class="img-fluid"
+            src="https://www.costaricajourneys.com/wp-content/uploads/2013/12/samasati-nature-retreat.jpg"
+            alt="Meditation"
+          />
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE AND INFO -->
+
+<div class="container">
+
+<!-- I added a container to this picture so it stays centered and also added margins, padding,
+ and padding top so it would not become overly large when maximixed -->
+
+    <div class="m-auto">
+        <div class="row text-center mt-5 pb-5 pt-5 athlete">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8"></div>
+            <img src=https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1kJrqK.img?w=768&h=512&m=6" 
+            class="img-fluid" max-width="100%" height="auto" alt="Pensive athlete">
+        </div>
+        <div>
+                <h3 class="text-center mb-4 fs-4">"Whether you think you can, or you think you can't, you're right." -Henry Ford</h3>
+            </div>
+    </div>
+</div>
+
+    <hr class="border border-secondary border-1 opacity-50">
+
+    <!-- IMG OF BECOME BEST VERSION OF YOURSELF -->
+
+<!-- here is my image with text that links to my table/form page
+  I used image overlay to put the text on top of the image -->
+
+<div class="container">
+    <div class="card text-bg-dark fs-4 text-center">
+        <a href="balance.html" class="link-light">
+        <img src="https://media.theeverygirl.com/wp-content/uploads/2020/02/the-everygirl-wellness-shortcut-4-scaled.jpg" 
+            class="card-img img-fluid" 
+            alt="Healthy lifestyle">
+      
+        <div class="card-img-overlay">
+          <h5 class="card-title fs-2 text-center">Become the best version of yourself</h5>
+          <p class="card-text">Learn more on how to center your mind, body, and spirit </p>
+        </div>
+        </a>
+      </div>
+</div>
+
+
+    <!-- CONTACT FORM -->
+
+    <!-- here is where users could sign up for my wellness program
+     I made sure to center text everywhere and put in a container for continuity
+     this will also help responsiveness when browser is minimized -->
+
+    <h1 class="text-center mt-5 pt-5">Join our program</h1>
+    <h2 class="text-center mb-4">Sign up to begin your wellness journey</h2>
+
+    <div class="container">
+    <form class="row g-3 mb-5 ms-3 me-3 p-5">
+
+        <div class="row g-3">
+            <div class="col-md-6">
+            <label for="firstname" class="form-label">First name</label> 
+              <input type="text" class="form-control" aria-label="First name" id="firstname">
+            </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last name</label>
+              <input type="text" class="form-control" aria-label="Last name" id="lastname">
+            </div>
+          </div>
+
+<!-- I made sure to use proper rows/columns so the form labels are responsive as well -->
+
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- here I added my copyright footer which makes it look more professional -->
+
+<footer class="pt-5 pb-5 fs-5"> 
+    <div class="text-center p-2">
+    <h5>Align & Thrive: Living in Balance copyrighted 2024</h5>
+    </div>
+</footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+/* I used some css styling for specific colors and fonts
+this also helped add prominence to my images while retaining their responsiveness */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Parkinsans', sans-serif;
+    color: black; 
+}
+
+.photo-grid {
+    background-color: rgb(234, 219, 219);
+    border-radius: 10px;
+}
+
+.athlete {
+    background-color: rgba(196, 210, 214, 0.507);
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+}
